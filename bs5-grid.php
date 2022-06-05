@@ -13,6 +13,8 @@
 <!---
 Bootstrap 5 Grids
 
+https://codepen.io/jca2016satx/pen/gOvjgbW?editors=1010
+
 Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.
 
 If you do not want to use all 12 columns individually, you can group the columns together to create wider columns:
