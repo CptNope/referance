@@ -1013,6 +1013,295 @@ Setting two column widths
     <div class="col bg-warning">4  of 4</div>
   </div>
 </div>
+
+
+<!---
+Equal Height
+
+If one of the column is taller than the other (due to text or CSS height), the rest will follow:
+
+<div class="row">
+  <div class="col w3-padding-16 bg-success">Lorem ipsum dolor sit amet, cibo sensibus interesset no sit. Et dolor possim volutpat qui. No malis tollit iriure eam, et vel tale zril blandit, rebum vidisse nostrum qui eu. No nostrud dolorem legendos mea, ea eum mucius oporteat platonem.Eam an case scribentur, ei clita causae cum, alia debet eu vel.</div>
+  <div class="col w3-padding-16 bg-warning">col</div>
+  <div class="col w3-padding-16 bg-success">col</div>
+</div>
+
+Example
+
+<div class="row">
+  <div class="col">Lorem ipsum...</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+</div>
+--->
+
+<div class="container-fluid mt-3">
+  <h2>Equal Height</h2>
+  <p>If one of the column is taller than the other, the rest will follow.</p>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col bg-success">Lorem ipsum dolor sit amet, cibo sensibus interesset no sit. Et dolor possim volutpat qui. No malis tollit iriure eam, et vel tale zril blandit, rebum vidisse nostrum qui eu. No nostrud dolorem legendos mea, ea eum mucius oporteat platonem.Eam an case scribentur, ei clita causae cum, alia debet eu vel.</div>
+    <div class="col bg-warning">.col</div>
+    <div class="col bg-success">.col</div>
+  </div>
+</div>
+
+
+<!---
+Nested Columns
+
+<div class="row w3-margin-bottom">
+  <div class="col-8 w3-padding-16 bg-warning">
+    col-8
+    <div class="row" style="color:#212529;">
+      <div class="col-6 w3-padding-16 bg-light">col-6</div>
+      <div class="col-6 w3-padding-16 bg-secondary">col-6</div>
+    </div>
+  </div>
+  <div class="col-4 w3-padding-16 bg-success">col-4</div>
+</div>
+
+The following example shows how to create a two column layout, with another two columns inside one of the columns:
+
+Example
+
+<div class="row">
+  <div class="col-8">
+    .col-8
+    <div class="row">
+      <div class="col-6">.col-6</div>
+      <div class="col-6">.col-6</div>
+    </div>
+  </div>
+  <div class="col-4">.col-4</div>
+</div>
+--->
+
+<div class="container-fluid mt-3">
+  <h2>Nested Columns</h2>
+  <p>Add columns inside other columns:</p>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8 bg-warning p-4">
+      .col-8
+      <div class="row">
+        <div class="col-6 bg-light p-2">.col-6</div>
+        <div class="col-6 bg-secondary p-2">.col-6</div>
+      </div>
+    </div>
+    <div class="col-4 bg-success p-4">.col-4</div>
+  </div>
+</div>
+
+
+<!---
+Responsive Classes
+
+The Bootstrap 5 grid system has five classes:
+
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+.col-xxl- (xxl devices - screen width equal to or greater than 1400px)
+The classes above can be combined to create more dynamic and flexible layouts.
+
+Tip: Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm.
+--->
+
+<!---
+Stacked to Horizontal
+
+<div class="row">
+  <div class="col-sm-9 w3-padding-16 bg-success">col-sm-9</div>
+  <div class="col-sm-3 w3-padding-16 bg-warning">col-sm-3</div>
+</div>
+
+The following example shows how to create a column layout that starts out stacked on extra small devices, before becoming horizontal on larger devices (sm, md, lg and xl):
+
+Example
+
+<div class="row">
+  <div class="col-sm-9">col-sm-9</div>
+  <div class="col-sm-3">col-sm-3</div>
+</div>
+<div class="row">
+  <div class="col-sm">col-sm</div>
+  <div class="col-sm">col-sm</div>
+  <div class="col-sm">col-sm</div>
+</div>
+--->
+
+<div class="container-fluid mt-3">
+  <h1>Stacked to Horizontal</h1>
+  <p>Resize the browser window to see the effect.</p> 
+  <p>This example demonstrates a 75%/25% split on small, medium, large and xlarge devices. On extra small devices, it will stack (100% width).</p>      
+  <div class="container-fluid">     
+    <div class="row">
+      <div class="col-sm-9 bg-success">col-sm-9</div>
+      <div class="col-sm-3 bg-warning">col-sm-3</div>
+    </div>
+  </div>
+  <br>
+  <p>This example demonstrates a 33% split on small, medium, large and xlarge devices. On extra small devices, it will stack (100% width).</p>      
+  <div class="container-fluid">     
+    <div class="row">
+      <div class="col-sm bg-success">col-sm</div>
+      <div class="col-sm bg-warning">col-sm</div>
+      <div class="col-sm bg-success">col-sm</div>
+    </div>
+  </div>
+</div>
+
+
+<!---
+Mix and Match
+
+50%/50% split on extra small devices and 75%/25% split on larger devices
+<div class="row">
+<div class="col-6 col-sm-9 w3-padding-16 bg-success">col-6 col-sm-9</div>
+<div class="col-6 col-sm-3 w3-padding-16 bg-warning">col-6 col-sm-3</div>
+</div>
+
+58%/42% split on extra small, small and medium devices and 66.3%/33.3% split on large and xlarge devices
+<div class="row">
+<div class="col-7 col-lg-8 w3-padding-16 bg-success">col-7 col-lg-8</div>
+<div class="col-5 col-lg-4 w3-padding-16 bg-warning">col-5 col-lg-4</div>
+</div>
+
+25%/75% split on small devices, a 50%/50% split on medium devices, and a 33%/66% split on large and xlarge devices. On extra small devices, it will automatically stack (100%)
+<div class="row">
+<div class="col-sm-3 col-md-6 col-lg-4 w3-padding-16 bg-success">col-sm-3 col-md-6 col-lg-4</div>
+<div class="col-sm-9 col-md-6 col-lg-8 w3-padding-16 bg-warning">col-sm-9 col-md-6 col-lg-8</div>
+</div>
+
+Example
+
+50%/50% split on extra small devices and 75%/25% split on larger devices
+<div class="row">
+  <div class="col-6 col-sm-9">col-6 col-sm-9</div>
+  <div class="col-6 col-sm-3">col-6 col-sm-3</div>
+</div>
+
+58%/42% split on extra small, small and medium devices and 66.3%/33.3% split on large and xlarge devices
+<div class="row">
+  <div class="col-7 col-lg-8">col-7 col-lg-8</div>
+  <div class="col-5 col-lg-4">col-5 col-lg-4</div>
+</div>
+
+25%/75% split on small devices, a 50%/50% split on medium devices, and a 33%/66% split on large and xlarge devices. On extra small devices, it will automatically stack (100%)
+<div class="row">
+  <div class="col-sm-3 col-md-6 col-lg-4">col-sm-3 col-md-6 col-lg-4</div>
+  <div class="col-sm-9 col-md-6 col-lg-8">col-sm-9 col-md-6 col-lg-8</div>
+</div>
+--->
+
+<div class="container-fluid mt-3">
+  <h1>Mix and Match</h1>
+  <p>Resize the browser window to see the effect.</p> 
+  <p>This example demonstrates a 50%/50% split on extra small devices and 75%/25% split on larger devices.</p>      
+  <div class="container-fluid">     
+    <div class="row">
+      <div class="col-6 col-sm-9 bg-success">col-6 col-sm-9</div>
+      <div class="col-6 col-sm-3 bg-warning">col-6 col-sm-3</div>
+    </div>
+  </div>
+  <br>
+  <p>This example demonstrates a 58%/42% split on extra small, small and medium devices and 66.3%/33.3% split on large and xlarge devices.</p>      
+  <div class="container-fluid">     
+    <div class="row">
+      <div class="col-7 col-lg-8 bg-success">col-7 col-lg-8</div>
+      <div class="col-5 col-lg-4 bg-warning">col-5 col-lg-4</div>
+    </div>
+  </div>
+  <br>
+  <p>This example demonstrates a 25%/75% split on small devices, a 50%/50% split on medium devices, and a 33%/66% split on large and xlarge devices. On extra small devices, it will automatically stack (100%).</p>      
+  <div class="container-fluid">     
+    <div class="row">
+      <div class="col-sm-3 col-md-6 col-lg-4 bg-success">col-sm-3 col-md-6 col-lg-4</div>
+      <div class="col-sm-9 col-md-6 col-lg-8 bg-warning">col-sm-9 col-md-6 col-lg-8</div>
+    </div>
+  </div>
+</div>
+
+
+<!---
+No Gutters
+
+To change the gutters (extra space) between columns, use any of the .g-1|2|3|4|5 classes (.g-4 is default).
+
+To remove the gutter completely, use .g-0:
+
+<div class="container-fluid">
+    <div class="row g-0">
+      <div class="col-3 bg-success" style="padding-left:0;padding-right:0">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="col-9 bg-warning" style="padding-left:0;padding-right:0">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      </div>
+    </div>
+  </div>
+
+Example
+
+<div class="row g-0">
+--->
+
+<div class="container-fluid mt-3">
+  <h1>No Gutters</h1>
+  <p>To change the gutters (extra space) between columns, use any of the <code class="w3-codespan">.g-1|2|3|4|5</code> classes 
+  (<code class="w3-codespan">.g-4</code> is default). </p>
+  <p>To remove the gutters completely, use <code class="w3-codespan">.g-0</code>:</p>
+
+  <div class="container-fluid">
+    <div class="row g-0">
+      <div class="col-3 bg-success">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="col-9 bg-warning">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
 <!---
 --->
 <!---
