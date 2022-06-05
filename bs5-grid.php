@@ -587,6 +587,415 @@ Four columns: 25% width on all screens, except for extra small (100% width)
 
 
 <!---
+Bootstrap 5 Grid Examples
+
+Below we have collected some examples of Bootstrap 5 grid layouts.
+
+Three Equal Columns
+
+Use the .col class on a specified number of elements and Bootstrap will recognize how many elements there are (and create equal-width columns). In the example below, we use three col elements, which gets a width of 33.33% each.
+
+<div class="row">
+  <div class="col w3-padding-16 bg-success xp-3">
+    col
+  </div>
+  <div class="col w3-padding-16 bg-warning xp-3">
+    col
+  </div>
+  <div class="col w3-padding-16 bg-success xp-3">
+    col
+  </div>
+</div>
+
+Example
+
+<div class="row">
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+</div>
+--->
+<div class="container-fluid mt-3">
+  <h2>Three Equal Columns</h2>
+  <p>Use the .col class on a specified number of elements and Bootstrap will recognize how many elements there are (and create equal-width columns). In the example below, we use three col elements, which gets a width of 33.33% each.</p>
+  <div class="row">
+    <div class="col bg-success">.col</div>
+    <div class="col bg-warning">.col</div>
+    <div class="col bg-success">.col</div>
+  </div>
+</div>
+
+
+<!---
+Three Equal Columns Using Numbers
+
+You can also use numbers to control the column width. Just make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available columns):
+
+<div class="row">
+  <div class="col-4 w3-padding-16 bg-success">
+    col-4
+  </div>
+  <div class="col-4 w3-padding-16 bg-warning">
+    col-4
+  </div>
+  <div class="col-4 w3-padding-16 bg-success">
+    col-4</div>
+</div>
+
+Example
+
+<div class="row">
+  <div class="col-4">col-4</div>
+  <div class="col-4">col-4</div>
+  <div class="col-4">col-4</div>
+</div>
+--->
+
+<div class="container-fluid mt-3">
+  <h2>Three Equal Columns</h2>
+  <p>You can also use numbers to control the column width. Just make sure that the sum always adds up to 12:</p>
+  <div class="row">
+    <div class="col-4 bg-success">.col-4</div>
+    <div class="col-4 bg-warning">.col-4</div>
+    <div class="col-4 bg-success">.col-4</div>
+  </div>
+</div>
+
+
+<!---
+Three Unequal columns
+
+To create unequal columns, you have to use numbers. The following example will create a 25%/50%/25% split:
+
+<div class="row">
+  <div class="col-3 w3-padding-16 bg-success">
+    col-3
+  </div>
+  <div class="col-6 w3-padding-16 bg-warning">
+    col-6
+  </div>
+  <div class="col-3 w3-padding-16 bg-success">
+    col-3
+  </div>
+</div>
+
+Example
+
+<div class="row">
+  <div class="col-3">col-3</div>
+  <div class="col-6">col-6</div>
+  <div class="col-3">col-3</div>
+</div>
+--->
+
+
+<div class="container-fluid mt-3">
+  <h2>Three Unequal Columns</h2>
+  <p>To create unequal columns, you have to use numbers. The following example will create a 25%/50%/25% split:</p>
+  <div class="row">
+    <div class="col-3 bg-success">.col-3</div>
+    <div class="col-6 bg-warning">.col-6</div>
+    <div class="col-3 bg-success">.col-3</div>
+  </div>
+</div>
+
+<!---
+Setting One Column Width
+
+However, it is enough to only set the width of one column, and have the sibling columns automatically resize around it. The following example will create a 25%/50%/25% split:
+
+<div class="row">
+  <div class="col w3-padding-16 bg-success">
+    col
+  </div>
+  <div class="col-6 w3-padding-16 bg-warning">
+    col-6
+  </div>
+  <div class="col w3-padding-16 bg-success">
+    col
+  </div>
+</div>
+
+Example
+
+<div class="row">
+  <div class="col">col</div>
+  <div class="col-6">col-6</div>
+  <div class="col">col</div>
+</div>
+--->
+
+<div class="container-fluid mt-3">
+  <h2>Three Unequal Columns</h2>
+  <p>It is enough to only set the width of one column, and have the sibling columns automatically resize around it. The following example will create a 25%/50%/25% split:</p>
+  <div class="row">
+    <div class="col bg-success">.col</div>
+    <div class="col-6 bg-warning">.col-6</div>
+    <div class="col bg-success">.col</div>
+  </div>
+</div>
+
+<!---
+
+
+More Equal Columns
+
+<div class="row">
+  <div class="col w3-padding-16 bg-success">
+    1 of 4
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    2 of 4
+  </div>
+  <div class="col w3-padding-16 bg-success">
+    3 of 4
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    4 of 4
+  </div>
+</div>
+
+Example
+
+Two equal columns
+<div class="row">
+  <div class="col">1 of 2</div>
+  <div class="col">2 of 2</div>
+</div>
+
+Four equal columns
+<div class="row">
+  <div class="col">1 of 4</div>
+  <div class="col">2 of 4</div>
+  <div class="col">3 of 4</div>
+  <div class="col">4 of 4</div>
+</div>
+
+Six equal columns
+<div class="row">
+  <div class="col">1 of 6</div>
+  <div class="col">2 of 6</div>
+  <div class="col">3 of 6</div>
+  <div class="col">4 of 6</div>  
+  <div class="col">5 of 6</div>
+  <div class="col">6 of 6</div>
+</div>
+--->
+
+<div class="container-fluid mt-3">
+  <h2>More Equal Columns</h2>
+  <div class="row">
+    <div class="col bg-success">1 of 2</div>
+    <div class="col bg-warning">2 of 2</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col bg-success">1 of 4</div>
+    <div class="col bg-warning">2 of 4</div>
+    <div class="col bg-success">3 of 4</div>
+    <div class="col bg-warning">4 of 4</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col bg-success">1 of 6</div>
+    <div class="col bg-warning">2 of 6</div>
+    <div class="col bg-success">3 of 6</div>
+    <div class="col bg-warning">4 of 6</div>
+    <div class="col bg-success">5 of 6</div>
+    <div class="col bg-warning">6 of 6</div>
+  </div>
+</div>
+
+
+<!---
+Row Cols
+
+You can also control how many columns that should appear next to each other (regardless of how many cols), with the .row-cols-* classes:
+
+<div class="row row-cols-1">
+  <div class="col w3-padding-16 bg-success">
+    1 of 2
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    2 of 2
+  </div>
+</div>
+
+<div class="row row-cols-2">
+  <div class="col w3-padding-16 bg-success">
+    1 of 4
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    2 of 4
+  </div>
+  <div class="col w3-padding-16 bg-success">
+    3 of 4
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    4 of 4
+  </div>
+</div>
+
+<div class="row row-cols-3">
+  <div class="col w3-padding-16 bg-success">
+    1 of 6
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    2 of 6
+  </div>
+  <div class="col w3-padding-16 bg-success">
+    3 of 6
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    4 of 6
+  </div>
+  <div class="col w3-padding-16 bg-success">
+    5 of 6
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    6 of 6
+  </div>
+</div>
+
+Example
+
+<div class="row row-cols-1">
+  <div class="col">1 of 2</div>
+  <div class="col">2 of 2</div>
+</div>
+
+<div class="row row-cols-2">
+  <div class="col">1 of 4</div>
+  <div class="col">2 of 4</div>
+  <div class="col">3 of 4</div>
+  <div class="col">4 of 4</div>
+</div>
+
+<div class="row row-cols-3">
+  <div class="col">1 of 6</div>
+  <div class="col">2 of 6</div>
+  <div class="col">3 of 6</div>
+  <div class="col">4 of 6</div>  
+  <div class="col">5 of 6</div>
+  <div class="col">6 of 6</div>
+</div>
+--->
+
+<div class="container-fluid mt-3">
+  <h2>Row Cols</h2>
+  <p>The .row-cols-* classes are used to set the number of columns that should appear next to each other.</p>
+
+  <div class="row row-cols-1">
+    <div class="col bg-success">1 of 2</div>
+    <div class="col bg-warning">2 of 2</div>
+  </div>
+  <br>
+  <div class="row row-cols-2">
+    <div class="col bg-success">1 of 4</div>
+    <div class="col bg-warning">2 of 4</div>
+    <div class="col bg-success">3 of 4</div>
+    <div class="col bg-warning">4 of 4</div>
+  </div>
+  <br>
+  <div class="row row-cols-3">
+    <div class="col bg-success">1 of 6</div>
+    <div class="col bg-warning">2 of 6</div>
+    <div class="col bg-success">3 of 6</div>
+    <div class="col bg-warning">4 of 6</div>
+    <div class="col bg-success">5 of 6</div>
+    <div class="col bg-warning">6 of 6</div>
+  </div>
+</div>
+
+
+<!---
+More Unequal Columns
+
+<div class="row">
+  <div class="col-8 w3-padding-16 bg-success">
+    1 of 2
+  </div>
+  <div class="col-4 w3-padding-16 bg-warning">
+    2 of 2
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-8 w3-padding-16 bg-success">
+    1 of 2
+  </div>
+  <div class="col-4 w3-padding-16 bg-warning">
+    2 of 2
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-4 w3-padding-16 bg-warning">
+    1 of 4
+  </div>
+  <div class="col-6 w3-padding-16 bg-success">
+    2 of 4
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    3 of 4
+  </div>
+  <div class="col w3-padding-16 bg-success">
+    4 of 4
+  </div>
+</div>
+
+Example
+
+Two Unequal Columns
+<div class="row">
+  <div class="col-8">1 of 2</div>
+  <div class="col-4">2 of 2</div>
+</div>
+
+Four Unequal Columns
+<div class="row">
+  <div class="col-2">1 of 4</div>
+  <div class="col-2">2 of 4</div>
+  <div class="col-2">3 of 4</div>
+  <div class="col-6">4 of 4</div>
+</div>
+
+Setting two column widths
+<div class="row">
+  <div class="col-4">1 of 4</div>
+  <div class="col-6">2 of 4</div>
+  <div class="col">3 of 4</div>
+  <div class="col">4 of 4</div>
+</div>
+--->
+<div class="container-fluid mt-3">
+  <h2>More Unequal Columns</h2>
+  <div class="row">
+    <div class="col-8 bg-success">1 of 2</div>
+    <div class="col-4 bg-warning">2 of 2</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-2 bg-success">1 of 4</div>
+    <div class="col-2 bg-warning">2 of 4</div>
+    <div class="col-2 bg-success">3 of 4</div>
+    <div class="col-6 bg-warning">4  of 4</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-4 bg-success">1 of 4</div>
+    <div class="col-6 bg-warning">2 of 4</div>
+    <div class="col bg-success">3 of 4</div>
+    <div class="col bg-warning">4  of 4</div>
+  </div>
+</div>
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
 --->
 <!---
 --->
