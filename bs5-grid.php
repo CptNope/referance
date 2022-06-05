@@ -338,7 +338,7 @@ Second example: instead of adding a number to each col, let bootstrap handle the
 Grid Options
 
 The following table summarizes how the Bootstrap 5 grid system works across different screen sizes:
---->
+
 <div class="table-responsive">
 <table class="ws-table-all table-bordered notranslate">
   <tbody><tr>
@@ -433,7 +433,173 @@ The following table summarizes how the Bootstrap 5 grid system works across diff
   </tr>
 </tbody></table>
 </div>
+--->
 
+<!---
+Bootstrap 5 Grid Stacked to horizontal
+
+Let's create a basic grid system that starts out stacked on extra small devices, before becoming horizontal on larger devices.
+
+The following example shows a simple "stacked-to-horizontal" two-column layout, meaning it will result in a 50%/50% split on all screens, except for extra small screens, which it will automatically stack (100%):
+
+<div class="row">
+  <div class="col-sm-6 w3-padding-16 bg-primary text-white container">
+    col-sm-6
+  </div>
+  <div class="col-sm-6 w3-padding-16 bg-dark text-white container">
+    col-sm-6
+  </div>
+</div>
+
+Example: Stacked-to-horizontal
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 bg-primary">
+      <p>Lorem ipsum...</p>
+    </div>
+    <div class="col-sm-6 bg-dark">
+      <p>Sed ut perspiciatis...</p>
+    </div>
+  </div>
+</div>
+--->
+<div class="container-fluid mt-3">
+  <h1>Grid Example</h1>
+  <p>This example demonstrates a 50%/50% split on small, medium, large, xlarge and xxlarge devices. On extra small devices, it will stack (100% width).</p>      
+  <p>Resize the browser window to see the effect.</p> 
+  <div class="row">
+    <div class="col-sm-6 bg-primary text-white p-3">
+      Lorem ipsum...
+    </div>
+    <div class="col-sm-6 bg-dark text-white p-3">
+      Sed ut perspiciatis...
+    </div>
+  </div>
+</div>
+
+<!---
+Tip: The numbers in the .col-sm-* classes indicates how many columns the div should span (out of 12). So, .col-sm-1 spans 1 column, .col-sm-4 spans 4 columns, .col-sm-6 spans 6 columns, etc.
+
+Note: Make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available columns):
+
+Tip: You can turn any full-width layout into a fixed-width responsive layout, by changing the .container-fluid class to .container:
+--->
+
+<!---
+Example: Responsive Container
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Lorem ipsum...</p>
+    </div>
+    <div class="col-sm-6">
+      <p>Sed ut perspiciatis...</p>
+    </div>
+  </div>
+</div>
+--->
+
+<div class="container mt-3">
+  <h1>Grid Example</h1>
+  <p>This example demonstrates a 50%/50% split on small, medium, large, xlarge and xxlarge devices. On extra small devices, it will stack (100% width).</p>      
+  <p>Resize the browser window to see the effect.</p> 
+  <div class="row">
+    <div class="col-sm-6 bg-primary text-white p-3">
+      Lorem ipsum...
+    </div>
+    <div class="col-sm-6 bg-dark text-white p-3">
+      Sed ut perspiciatis...
+    </div>
+  </div>
+</div>
+
+
+<!---
+Auto Layout Columns
+
+In Bootstrap 5, there is an easy way to create equal width columns for all devices: just remove the number from .col-size-* and only use the .col-size class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width. The size classes (sm, md, etc.) determines when the columns should be responsive:
+
+Two columns: 50% width on all screens, except for extra small (100% width)
+<div class="row">
+  <div class="col-sm">1 of 2</div>
+  <div class="col-sm">2 of 2</div>
+</div>
+
+Four columns: 25% width on all screens, except for extra small (100% width)
+<div class="row">
+  <div class="col-sm">1 of 4</div>
+  <div class="col-sm">2 of 4</div>
+  <div class="col-sm">3 of 4</div>
+  <div class="col-sm">4 of 4</div>
+</div>
+
+<div class="w3-white w3-padding">
+<div class="row w3-padding">
+  <div class="col w3-padding-16 bg-primary text-white container">
+    1 of 2
+  </div>
+  <div class="col w3-padding-16 bg-dark text-white container">
+    2 of 2
+  </div>
+</div>
+
+<div class="row w3-padding">
+  <div class="col w3-padding-16 bg-primary text-white container">
+    1 of 4
+  </div>
+  <div class="col w3-padding-16 bg-dark text-white container">
+    2 of 4
+  </div>
+  <div class="col w3-padding-16 bg-primary text-white container">
+    3 of 4
+  </div>
+  <div class="col w3-padding-16 bg-dark text-white container">
+    4 of 4
+  </div>
+</div>
+</div>
+--->
+
+<div class="container-fluid mt-3">
+  <h1>Auto Layout Columns</h1>
+  <p>In Bootstrap 5, there is an easy way to create equal width columns: just use the <code>.col-size</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
+  <p>Two columns: 50% width on all screens, except for extra small (100% width on screens less than <strong>576px</strong> wide)</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm bg-primary text-white p-3">1 of 2</div>
+      <div class="col-sm bg-dark text-white p-3">2 of 2</div>
+    </div>  
+  </div>
+  <br>
+  
+  <p>Four columns: 25% width on all screens, except for extra small (100% width on screens less than <strong>576px</strong> wide)</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm bg-primary text-white p-3">1 of 4</div>
+      <div class="col-sm bg-dark text-white p-3">2 of 4</div>
+      <div class="col-sm bg-primary text-white p-3">3 of 4</div>
+      <div class="col-sm bg-dark text-white p-3">4 of 4</div>
+    </div>  
+  </div>
+</div>
+
+
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
+<!---
+--->
 </body>
 </html>
 
