@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!---https://www.w3schools.com/bootstrap5/bootstrap_flex.php--->
 </head>
 <body>
 
@@ -37,8 +38,6 @@
 
 <!---
 Bootstrap 5 Notes
-
-https://www.w3schools.com/bootstrap5/bootstrap_flex.php
 
 To create a flexbox container and to transform direct children into flex items, use the d-flex class:
 
