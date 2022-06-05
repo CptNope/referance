@@ -121,6 +121,12 @@ Below we have collected some examples of basic Bootstrap 5 grid layouts.
 <!---
 Three Equal Columns
 
+<div class="row test">
+  <div class="col-4 ws-grey">.col</div>
+  <div class="col-4 ws-grey">.col</div>
+  <div class="col-4 ws-grey">.col</div>
+</div>
+
 The following example shows how to create three equal-width columns, on all devices and screen widths:
 
 <div class="row">
@@ -142,6 +148,13 @@ The following example shows how to create three equal-width columns, on all devi
 
 <!---
 Responsive Columns
+
+<div class="row test">
+  <div class="col-sm-3 ws-grey">.col-sm-3</div>
+  <div class="col-sm-3 ws-grey">.col-sm-3</div>
+  <div class="col-sm-3 ws-grey">.col-sm-3</div>
+  <div class="col-sm-3 ws-grey">.col-sm-3</div>
+</div>
 
 The following example shows how to create four equal-width columns starting at tablets and scaling to extra large desktops. On mobile phones or screens that are less than 576px wide, the columns will automatically stack on top of each other:
 
@@ -168,6 +181,11 @@ The following example shows how to create four equal-width columns starting at t
 
 <!---
 Two Unequal Responsive Columns
+
+<div class="row test">
+  <div class="col-sm-4 ws-grey">.col-sm-4</div>
+  <div class="col-sm-8 ws-grey">.col-sm-8</div>
+</div>
 
 The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:
 
