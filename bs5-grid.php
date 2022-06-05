@@ -88,7 +88,7 @@ Basic Structure of a Bootstrap 5 Grid
 
 The following is a basic structure of a Bootstrap 5 grid:
 
-<!-- 
+
 Control the column width, and how they should appear on different devices 
 
 <div class="row">
