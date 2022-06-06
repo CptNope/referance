@@ -223,7 +223,7 @@ Kitchen sink
 
 Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
 --->
-
+<div class="container mt-3">
 <div class="card" style="width: 18rem;">
   <img src="https://www.w3schools.com/bootstrap5/img_avatar3.png" class="card-img-top" alt="...">
   <div class="card-body">
@@ -244,5 +244,7 @@ Mix and match multiple content types to create the card you need, or throw every
   <div class="mt-5 p-4 bg-dark text-white text-center">
   <p>Footer</p>
 </div>
+</div>
+
 </body>
 </html>
