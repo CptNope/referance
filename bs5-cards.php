@@ -217,8 +217,29 @@ Turn an image into a card background and use .card-img-overlay to add text on to
   </div>
 </div>
 </section>
-  
-  
+
+<!---
+Kitchen sink
+
+Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
+--->
+
+<div class="card" style="width: 18rem;">
+  <img src="https://www.w3schools.com/bootstrap5/img_avatar3.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
   
   <div class="mt-5 p-4 bg-dark text-white text-center">
   <p>Footer</p>
