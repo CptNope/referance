@@ -9,7 +9,7 @@
   <!---https://codepen.io/jca2016satx/pen/gOvjgbW?editors=1010--->
 </head>
 <body>
-    
+
 <div class="container-fluid p-5 bg-primary text-white text-center">
   <h1>My First Bootstrap Page</h1>
   <p>Resize this responsive page to see the effect!</p> 
@@ -35,3 +35,9 @@
   </div>
 </div>
 
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>
