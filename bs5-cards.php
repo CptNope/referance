@@ -241,10 +241,42 @@ Mix and match multiple content types to create the card you need, or throw every
   </div>
 </div>
   
-  <div class="mt-5 p-4 bg-dark text-white text-center">
+  
+<!---
+Sizing
+
+Cards assume no specific width to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.
+
+Using grid markup
+Using the grid, wrap cards in columns and rows as needed.
+--->
+  
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+<div class="mt-5 p-4 bg-dark text-white text-center">
   <p>Footer</p>
 </div>
-</div>
+
 
 </body>
 </html>
